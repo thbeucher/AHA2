@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aha-project-vg"
+version = "0.1.0"
+description = "Autonomous Hypothesis Agents: a non-gradient research substrate for embodied intelligence."
+requires-python = ">=3.12"
+dependencies = [
+  "numpy>=1.26",
+  "networkx>=3.2",
+  "gymnasium>=0.29",
+  "minigrid>=2.3",
+  "matplotlib>=3.8",
+  "rich>=13.7",
+  "typer>=0.12",
+  "pydantic>=2.6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[project.scripts]
+aha-gridworld = "aha.experiments.run_gridworld:app"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

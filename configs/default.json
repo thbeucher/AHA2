@@ -1,0 +1,12 @@
+{
+  "seed": 7,
+  "prediction_horizon": 1,
+  "initial_energy": 10.0,
+  "thinking_cost": 0.05,
+  "communication_cost": 0.02,
+  "memory_cost": 0.01,
+  "prediction_cost": 0.03,
+  "retirement_energy": 0.1,
+  "min_confidence": 0.0,
+  "max_confidence": 1.0
+}
