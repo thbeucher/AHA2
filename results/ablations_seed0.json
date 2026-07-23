@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "experiment": "ablations",
+    "seed": 0,
+    "episodes": 200,
+    "timestamp_utc": "2026-07-23T01:07:50.462690+00:00",
+    "python": "3.12.11",
+    "platform": "macOS-26.5.2-arm64-arm-64bit"
+  },
+  "results": {
+    "results": {
+      "H_full": {
+        "prediction_accuracy": 0.4874,
+        "prediction_calibration_error": 0.1874,
+        "predictions_evaluated": 23122,
+        "hypothesis_diversity": 0.9375,
+        "hypothesis_redundancy": 0.0625,
+        "behavioral_stability": 0.88,
+        "behavioral_complexity": 0.3598,
+        "distributed_contribution": 0.9118,
+        "population": 16,
+        "living": 16,
+        "structural_events": 61,
+        "total_reward": 36.0
+      },
+      "A_no_communication": {
+        "prediction_accuracy": 0.4874,
+        "prediction_calibration_error": 0.1874,
+        "predictions_evaluated": 23122,
+        "hypothesis_diversity": 0.9375,
+        "hypothesis_redundancy": 0.0625,
+        "behavioral_stability": 0.88,
+        "behavioral_complexity": 0.3598,
+        "distributed_contribution": 0.9118,
+        "population": 16,
+        "living": 16,
+        "structural_events": 61,
+        "total_reward": 36.0
+      },
+      "B_no_delayed_credit": {
+        "prediction_accuracy": 0.445,
+        "prediction_calibration_error": 0.27,
+        "predictions_evaluated": 22734,
+        "hypothesis_diversity": 0.9231,
+        "hypothesis_redundancy": 0.0769,
+        "behavioral_stability": 0.88,
+        "behavioral_complexity": 0.3598,
+        "distributed_contribution": 0.9209,
+        "population": 13,
+        "living": 13,
+        "structural_events": 51,
+        "total_reward": 38.0
+      },
+      "C_no_causal": {
+        "prediction_accuracy": 0.4874,
+        "prediction_calibration_error": 0.1902,
+        "predictions_evaluated": 23122,
+        "hypothesis_diversity": 0.9375,
+        "hypothesis_redundancy": 0.0625,
+        "behavioral_stability": 0.88,
+        "behavioral_complexity": 0.3598,
+        "distributed_contribution": 0.9118,
+        "population": 16,
+        "living": 16,
+        "structural_events": 61,
+        "total_reward": 36.0
+      },
+      "D_no_structural": {
+        "prediction_accuracy": 0.0,
+        "prediction_calibration_error": 1.0,
+        "predictions_evaluated": 0,
+        "hypothesis_diversity": 0.0,
+        "hypothesis_redundancy": 1.0,
+        "behavioral_stability": 0.88,
+        "behavioral_complexity": 0.3598,
+        "distributed_contribution": 0.0,
+        "population": 0,
+        "living": 0,
+        "structural_events": 0,
+        "total_reward": 36.0
+      },
+      "E_no_energy": {
+        "prediction_accuracy": 0.4588,
+        "prediction_calibration_error": 0.1451,
+        "predictions_evaluated": 23309,
+        "hypothesis_diversity": 0.9167,
+        "hypothesis_redundancy": 0.0833,
+        "behavioral_stability": 0.86,
+        "behavioral_complexity": 0.4011,
+        "distributed_contribution": 0.9283,
+        "population": 12,
+        "living": 12,
+        "structural_events": 38,
+        "total_reward": 37.0
+      },
+      "F_no_novelty": {
+        "prediction_accuracy": 0.4874,
+        "prediction_calibration_error": 0.1874,
+        "predictions_evaluated": 23122,
+        "hypothesis_diversity": 0.9375,
+        "hypothesis_redundancy": 0.0625,
+        "behavioral_stability": 0.88,
+        "behavioral_complexity": 0.3598,
+        "distributed_contribution": 0.9118,
+        "population": 16,
+        "living": 16,
+        "structural_events": 61,
+        "total_reward": 36.0
+      },
+      "G_no_homeostasis": {
+        "prediction_accuracy": 0.5143,
+        "prediction_calibration_error": 0.1833,
+        "predictions_evaluated": 30972,
+        "hypothesis_diversity": 0.9167,
+        "hypothesis_redundancy": 0.0833,
+        "behavioral_stability": 0.88,
+        "behavioral_complexity": 0.3598,
+        "distributed_contribution": 0.9767,
+        "population": 12,
+        "living": 12,
+        "structural_events": 52,
+        "total_reward": 36.0
+      }
+    },
+    "table": {
+      "H_full": {
+        "total_reward": 36.0,
+        "delta_vs_full": 0.0,
+        "pred_acc": 0.4874,
+        "population": 16,
+        "structural_events": 61
+      },
+      "A_no_communication": {
+        "total_reward": 36.0,
+        "delta_vs_full": 0.0,
+        "pred_acc": 0.4874,
+        "population": 16,
+        "structural_events": 61
+      },
+      "B_no_delayed_credit": {
+        "total_reward": 38.0,
+        "delta_vs_full": 2.0,
+        "pred_acc": 0.445,
+        "population": 13,
+        "structural_events": 51
+      },
+      "C_no_causal": {
+        "total_reward": 36.0,
+        "delta_vs_full": 0.0,
+        "pred_acc": 0.4874,
+        "population": 16,
+        "structural_events": 61
+      },
+      "D_no_structural": {
+        "total_reward": 36.0,
+        "delta_vs_full": 0.0,
+        "pred_acc": 0.0,
+        "population": 0,
+        "structural_events": 0
+      },
+      "E_no_energy": {
+        "total_reward": 37.0,
+        "delta_vs_full": 1.0,
+        "pred_acc": 0.4588,
+        "population": 12,
+        "structural_events": 38
+      },
+      "F_no_novelty": {
+        "total_reward": 36.0,
+        "delta_vs_full": 0.0,
+        "pred_acc": 0.4874,
+        "population": 16,
+        "structural_events": 61
+      },
+      "G_no_homeostasis": {
+        "total_reward": 36.0,
+        "delta_vs_full": 0.0,
+        "pred_acc": 0.5143,
+        "population": 12,
+        "structural_events": 52
+      }
+    }
+  }
+}

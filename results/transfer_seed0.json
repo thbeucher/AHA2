@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "experiment": "transfer",
+    "seed": 0,
+    "episodes": 200,
+    "timestamp_utc": "2026-07-23T01:07:42.429669+00:00",
+    "python": "3.12.11",
+    "platform": "macOS-26.5.2-arm64-arm-64bit"
+  },
+  "results": {
+    "train_reward": 516.0,
+    "transfer_reward_pretrained": 16.0,
+    "transfer_reward_fresh": 21.0,
+    "transfer_advantage": -5.0,
+    "note": "Surface symbols AND action names change between worlds. The symbolic detector keys on exact tokens, so positive transfer would indicate structural reuse; ~0 or negative indicates the current detector cannot transfer relational structure (documented limitation)."
+  }
+}

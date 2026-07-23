@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "experiment": "discovery",
+    "seed": 0,
+    "episodes": 200,
+    "timestamp_utc": "2026-07-23T01:07:39.230485+00:00",
+    "python": "3.12.11",
+    "platform": "macOS-26.5.2-arm64-arm-64bit"
+  },
+  "results": {
+    "random": {
+      "total_reward": 337.0
+    },
+    "fixed_rule": {
+      "total_reward": 858.0
+    },
+    "aha_no_comm": {
+      "prediction_accuracy": 0.4874,
+      "prediction_calibration_error": 0.1874,
+      "predictions_evaluated": 23122,
+      "hypothesis_diversity": 0.9375,
+      "hypothesis_redundancy": 0.0625,
+      "behavioral_stability": 0.88,
+      "behavioral_complexity": 0.3598,
+      "distributed_contribution": 0.9118,
+      "population": 16,
+      "living": 16,
+      "structural_events": 61,
+      "total_reward": 36.0
+    },
+    "aha_with_comm": {
+      "prediction_accuracy": 0.4874,
+      "prediction_calibration_error": 0.1874,
+      "predictions_evaluated": 23122,
+      "hypothesis_diversity": 0.9375,
+      "hypothesis_redundancy": 0.0625,
+      "behavioral_stability": 0.88,
+      "behavioral_complexity": 0.3598,
+      "distributed_contribution": 0.9118,
+      "population": 16,
+      "living": 16,
+      "structural_events": 61,
+      "total_reward": 36.0
+    },
+    "aha_no_structural": {
+      "prediction_accuracy": 0.0,
+      "prediction_calibration_error": 1.0,
+      "predictions_evaluated": 0,
+      "hypothesis_diversity": 0.0,
+      "hypothesis_redundancy": 1.0,
+      "behavioral_stability": 0.88,
+      "behavioral_complexity": 0.3598,
+      "distributed_contribution": 0.0,
+      "population": 0,
+      "living": 0,
+      "structural_events": 0,
+      "total_reward": 36.0
+    },
+    "aha_full": {
+      "prediction_accuracy": 0.4874,
+      "prediction_calibration_error": 0.1874,
+      "predictions_evaluated": 23122,
+      "hypothesis_diversity": 0.9375,
+      "hypothesis_redundancy": 0.0625,
+      "behavioral_stability": 0.88,
+      "behavioral_complexity": 0.3598,
+      "distributed_contribution": 0.9118,
+      "population": 16,
+      "living": 16,
+      "structural_events": 61,
+      "total_reward": 36.0
+    }
+  }
+}

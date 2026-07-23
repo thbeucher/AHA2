@@ -1,0 +1,1 @@
+"""Hidden-rule environments. Rules are NEVER exposed to the agent as beliefs."""

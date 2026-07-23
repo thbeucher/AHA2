@@ -1,0 +1,1 @@
+"""LPCC colony: population-level orchestration, consensus, structural plasticity."""

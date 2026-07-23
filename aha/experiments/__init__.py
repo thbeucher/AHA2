@@ -1,1 +1,1 @@
-"""Reproducible experiment entry points."""
+"""Experiment drivers: discovery, reversal, transfer, emergence, ablations."""

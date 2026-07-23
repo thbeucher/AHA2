@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "experiment": "emergence",
+    "seed": 0,
+    "episodes": 200,
+    "timestamp_utc": "2026-07-23T01:07:43.223282+00:00",
+    "python": "3.12.11",
+    "platform": "macOS-26.5.2-arm64-arm-64bit"
+  },
+  "results": {
+    "reward_full": 193.0,
+    "reward_no_comm": 193.0,
+    "interaction_dependence": 0.0,
+    "max_single_cell_rule_coverage": 0.6667,
+    "emergence_score": {
+      "distributed_contribution": 0.7738,
+      "interaction_dependence": 0.0,
+      "centralized_encoding_absence": 0.3333,
+      "combined": 0.369
+    },
+    "full_summary": {
+      "prediction_accuracy": 0.4131,
+      "prediction_calibration_error": 0.093,
+      "predictions_evaluated": 8371,
+      "hypothesis_diversity": 1.0,
+      "hypothesis_redundancy": 0.0,
+      "behavioral_stability": 0.74,
+      "behavioral_complexity": 0.5858,
+      "distributed_contribution": 0.7738,
+      "population": 9,
+      "living": 9,
+      "structural_events": 31
+    },
+    "nocomm_summary": {
+      "prediction_accuracy": 0.4131,
+      "prediction_calibration_error": 0.093,
+      "predictions_evaluated": 8371,
+      "hypothesis_diversity": 1.0,
+      "hypothesis_redundancy": 0.0,
+      "behavioral_stability": 0.74,
+      "behavioral_complexity": 0.5858,
+      "distributed_contribution": 0.7738,
+      "population": 9,
+      "living": 9,
+      "structural_events": 31
+    },
+    "emergence_criteria": {
+      "no_single_cell_complete": true,
+      "depends_on_interaction": false,
+      "distributed": true
+    }
+  }
+}
