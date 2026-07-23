@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "experiment": "distributed_emergence",
+    "seed": 0,
+    "episodes": 300,
+    "timestamp_utc": "2026-07-23T01:16:56.480696+00:00",
+    "python": "3.12.11",
+    "platform": "macOS-26.5.2-arm64-arm-64bit"
+  },
+  "variants": {
+    "A_full": {
+      "total_reward": -15.650000000000007,
+      "solve_rate": 0.0267,
+      "final_100_solve_rate": 0.04,
+      "sent": 960,
+      "delivered": 11408
+    },
+    "B_no_comm": {
+      "total_reward": -15.700000000000006,
+      "solve_rate": 0.0267,
+      "final_100_solve_rate": 0.04,
+      "sent": 0,
+      "delivered": 0
+    },
+    "C_random_comm": {
+      "total_reward": -15.600000000000007,
+      "solve_rate": 0.0267,
+      "final_100_solve_rate": 0.04,
+      "sent": 964,
+      "delivered": 11440
+    },
+    "D_delayed_comm": {
+      "total_reward": -15.650000000000007,
+      "solve_rate": 0.0267,
+      "final_100_solve_rate": 0.04,
+      "sent": 960,
+      "delivered": 11200
+    },
+    "E_limited_bandwidth": {
+      "total_reward": -15.650000000000007,
+      "solve_rate": 0.0267,
+      "final_100_solve_rate": 0.04,
+      "sent": 960,
+      "delivered": 1440
+    },
+    "F_critical_pop_removed": {
+      "total_reward": -15.650000000000007,
+      "solve_rate": 0.0267,
+      "final_100_solve_rate": 0.04,
+      "sent": 488,
+      "delivered": 3888
+    },
+    "G_complete_info_single": {
+      "total_reward": -382.60000000000025
+    },
+    "H_full_no_energy_cost": {
+      "total_reward": 14.899999999999993,
+      "solve_rate": 0.17,
+      "final_100_solve_rate": 0.16,
+      "sent": 60648,
+      "delivered": 727488
+    }
+  },
+  "individual_solvability": {
+    "zone_A_only": {
+      "total_reward": -15.700000000000006,
+      "solve_rate": 0.0267
+    },
+    "zone_B_only": {
+      "total_reward": -15.700000000000006,
+      "solve_rate": 0.0267
+    },
+    "zone_C_only": {
+      "total_reward": -15.600000000000007,
+      "solve_rate": 0.0267
+    }
+  },
+  "individual_max_solve_rate": 0.0267,
+  "metrics": {
+    "interaction_dependence": 0.0,
+    "communication_necessity": 0.0,
+    "random_comm_degradation": 0.0,
+    "delayed_comm_degradation": 0.0,
+    "bandwidth_degradation": 0.0,
+    "critical_information_loss": 0.0
+  },
+  "verdict": {
+    "no_single_zone_solves": true,
+    "full_colony_solves": false,
+    "comm_necessary": false,
+    "random_comm_worse": false,
+    "critical_info_matters": false,
+    "interaction_dependent_emergence": false
+  },
+  "information_flow_sample": [
+    {
+      "t": 0,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 1,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 2,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 3,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 4,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 5,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 6,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 7,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 8,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 9,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 10,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 11,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 12,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 13,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 14,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 15,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 16,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 17,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 18,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 19,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 20,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 21,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 22,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 23,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 24,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 25,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 26,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 27,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 28,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 29,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 30,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 31,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 32,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 33,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 34,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 35,
+      "kind": "action",
+      "cell": null,
+      "action": "wait"
+    },
+    {
+      "t": 36,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 37,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 38,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    },
+    {
+      "t": 39,
+      "kind": "action",
+      "cell": null,
+      "action": "observe"
+    }
+  ]
+}

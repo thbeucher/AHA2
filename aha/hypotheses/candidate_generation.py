@@ -59,7 +59,19 @@ class TransitionMiner:
         action: str | None,
         next_tokens: set[Token],
     ) -> None:
-        """Record buffered (antecedent, action) -> delayed consequent arrivals."""
+        """Record buffered (antecedent, action) -> delayed consequent arrivals.
+
+        Consequents include both local observation tokens (``now:``) AND the
+        reward-sign token (``rew:sign``). Allowing reward as a minable consequent
+        is what lets a downstream, partially-observing cell form a hypothesis of
+        the form "received-message-token + my-signal + my-action -> reward",
+        i.e. a COMMUNICATION-CONDITIONED reward predictor. Without this, a cell
+        whose only observable downstream signal is reward can never attach a
+        predictive consequent to a received message.
+        """
+        def minable(t: Token) -> bool:
+            return t[0].startswith("now:") or t[0] == "rew:sign"
+
         prev_now = {t for t in prev_tokens if t[0].startswith("now:")}
         # Register this step's antecedent.
         self._buffer.append(_Antecedent(tokens=prev_now, action=action, age=0))
@@ -67,8 +79,10 @@ class TransitionMiner:
             key = (ant_tok, action)
             self.antecedent_counts[key] = self.antecedent_counts.get(key, 0) + 1
 
-        # Newly-arrived consequent tokens this step.
-        arrived = {t for t in (next_tokens - prev_tokens) if t[0].startswith("now:")}
+        # Newly-arrived consequent tokens this step (local obs OR positive reward).
+        arrived = {t for t in next_tokens if minable(t)} - {t for t in prev_tokens if minable(t)}
+        # Always allow a positive reward token to count as an arrival.
+        arrived |= {t for t in next_tokens if t == ("rew:sign", "pos")}
 
         # Attribute arrivals to buffered antecedents at their current age (delay).
         for entry in self._buffer:

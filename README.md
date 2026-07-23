@@ -29,8 +29,20 @@ substrate (Phases 0–12) alongside the original Phase-1 belief-agent scaffold
 The core LPCC substrate uses **no backpropagation, no gradient descent, no global
 loss, no policy network**. Each cell updates only from local + indirect evidence.
 
-See `paper/LPCC_REPORT.md` for the full scientific write-up (including honest
-negative results).
+See `paper/LPCC_REPORT.md` for the Phase-1 write-up and
+`paper/DISTRIBUTED_EMERGENCE_REPORT.md` for the Phase-2 distributed-emergence
+study (an honest **negative result**: the strict-bottleneck causal-chain task
+does NOT yet elicit interaction-dependent emergence, and the bottleneck is
+precisely localized).
+
+Phase-2 modules:
+- `aha/environments/distributed_chain.py` — partially-observable multi-stage
+  causal chain with strict per-zone observation partitioning.
+- `aha/communication/routed.py` — routed, costly, delayed, lossy,
+  bandwidth-limited messaging with corruption modes (NOT free broadcast).
+- `aha/colony/distributed_colony.py` — zone-partitioned population + info-flow log.
+- `aha/experiments/distributed.py` — ablations A–H, individual-solvability test,
+  complete-info baseline, transparent distributed-emergence metrics + verdict.
 
 ## Quick start
 
